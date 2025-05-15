@@ -1,0 +1,13 @@
+{% extends 'pages/base.jinja' %}
+
+{% block title %}
+    Flask Demo - RNG
+{% endblock %}
+
+{% block content %}
+    <h2>Your number is:</h2>
+
+    <article id="random">
+        {{ number }}
+    </article>
+{% endblock %}
