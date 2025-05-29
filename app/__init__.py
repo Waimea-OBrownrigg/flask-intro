@@ -10,9 +10,6 @@ app = Flask(__name__)
 # Home page - loading a static page.
 @app.get("/")
 def home():
-    client = connect_db()
-    result = client.execute("SELECT * FROM things")
-    print(result.rows)
     return render_template("pages/home.jinja")
 
 # About page - loading a static page.
